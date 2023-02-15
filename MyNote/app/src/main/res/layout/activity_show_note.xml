@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F4EFE1"
+    tools:context=".ShowNoteActivity">
+
+
+<!--    <TextView
+        android:id="@+id/dateshowview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:hint="Date"/>-->
+
+    <TextView
+        android:id="@+id/noteshowtitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/boxround"
+
+        android:hint=": Title"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/noteshowcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/noteshowtitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/boxround"
+        android:gravity="top"
+        android:hint="Add Note"
+        android:padding="20dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/edit_menu_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round"
+        android:elevation="20dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/save_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/note_view_menu" />
+
+</RelativeLayout>

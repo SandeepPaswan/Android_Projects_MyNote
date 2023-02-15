@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ForgotActivity">
+
+
+    <ImageView
+        android:id="@+id/logoonforgot"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:foregroundGravity="center"
+        android:padding="10dp"
+        android:src="@drawable/mynote" />
+
+
+    <TextView
+        android:id="@+id/txtforgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoonforgot"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="Forgot Password"
+        android:textColor="@color/notecolor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <EditText
+        android:id="@+id/foremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtforgot"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="80dp"
+        android:hint="Email" />
+
+    <Button
+        android:id="@+id/btnforgotsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/foremail"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button"
+        android:text="submit"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

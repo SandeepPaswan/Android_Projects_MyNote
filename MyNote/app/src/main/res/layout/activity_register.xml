@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/logoonregister"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/mynote" />
+
+
+    <TextView
+        android:id="@+id/signuptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoonregister"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="SIGNUP"
+        android:textColor="@color/notecolor"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/regemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signuptitle"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="80dp"
+        android:hint="admin@gmail.com"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/regpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regemail"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:hint="New Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnregsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/regpassword"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button"
+        android:clickable="true"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/btntologin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regpassword"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:text="Already rigestered"
+        android:textColor="@color/notecolor"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

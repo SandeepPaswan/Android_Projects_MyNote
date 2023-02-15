@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.spsoft.mynote"
+        minSdk 24
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'  //no change dif
+    implementation 'com.google.android.material:material:1.8.0' //dif
+    implementation 'com.google.firebase:firebase-functions:20.2.2'//dif
+    testImplementation 'junit:junit:4.13.2' //dif
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'  //dif
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'  //dif
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.3.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
+    implementation 'com.google.firebase:firebase-firestore:24.4.2'      // no change
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:8.0.2'
+    implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.2'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+
+}

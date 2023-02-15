@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADDAF6F1"
+    tools:context=".AddNoteActivity">
+<!--
+    <TextView
+        android:id="@+id/notedateview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="date"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:gravity="center" />-->
+
+    <EditText
+        android:id="@+id/typetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/boxround"
+        android:layout_below="@+id/viewLocation"
+        android:hint=": Title"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/typenote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/typetitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/boxround"
+        android:gravity="top"
+        android:hint="Add Note"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/viewLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/boxround"
+        android:hint="Set Address   /  click on get current Location"
+        android:padding="5dp"
+        android:textSize="15dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/getlocation"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="get Current Location"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="20dp"
+
+        android:background="@drawable/boxround"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/save_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round"
+        android:elevation="20dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/save_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/save_menu" />
+
+</RelativeLayout>

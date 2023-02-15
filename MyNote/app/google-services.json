@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "818847896710",
+    "project_id": "mynote-45bee",
+    "storage_bucket": "mynote-45bee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818847896710:android:2fc14182c8556caea8ad07",
+        "android_client_info": {
+          "package_name": "com.spsoft.mynote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818847896710-0rr0bsv12l54q3afhv966u79jfno4jiq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spsoft.mynote",
+            "certificate_hash": "201b852fb368d0fe8395f3710af55669150cc035"
+          }
+        },
+        {
+          "client_id": "818847896710-t5qrq38oo251dk2igj2p989p03ent32v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIL696CqDLoLt46SIf3gCgzXCz9PithBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818847896710-t5qrq38oo251dk2igj2p989p03ent32v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
